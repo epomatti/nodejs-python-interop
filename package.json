@@ -1,4 +1,10 @@
 {
   "name": "nodejs-python-interop",
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "python-shell": "^3.0.1"
+  }
 }
