@@ -1,12 +1,21 @@
 # nodejs-python-interop
 
-Node.js &lt;> Python interoperability
+Node.js -> Python interoperability examples.
 
 ```sh
 yarn install
 yarn dev
 ```
 
-curl localhost:4000/hello?name=Evandro
 
-https://stackoverflow.com/questions/23450534/how-to-call-a-python-function-from-node-js
+To run Node's native `child_process`:
+
+```sh
+curl localhost:4000/hello1?name=John
+```
+
+To run with [python-shell](https://github.com/extrabacon/python-shell):
+
+```sh
+curl localhost:4000/hello2?name=John
+```
