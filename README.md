@@ -7,7 +7,6 @@ yarn install
 yarn dev
 ```
 
-
 To run Node's native `child_process`:
 
 ```sh
@@ -19,3 +18,5 @@ To run with [python-shell](https://github.com/extrabacon/python-shell):
 ```sh
 curl localhost:4000/hello2?name=John
 ```
+
+Additionally, theres an option with [zerorpc](https://www.zerorpc.io/) for RPC communication from Node.js to Python.
