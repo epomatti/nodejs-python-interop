@@ -35,7 +35,18 @@ app.get('/hello2/', (req, res) => {
     console.log('results: %j', results);
   });
 
+  res.end('end');
 
+})
+
+app.get('/hello3/', async (req, res) => {
+  
+  // TODO: Waiting for issue support to implement this
+  const { python } = require('pythonia')
+  const test = await python('calc');
+
+  python.exit() //
+  res.end('end');
 })
 
 app.listen(4000, () => console.log('Application listening on port 4000!'))
